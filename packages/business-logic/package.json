@@ -1,0 +1,26 @@
+{
+  "name": "@victor/business-logic",
+  "version": "0.1.0",
+  "description": "> TODO: description",
+  "author": "victor",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "src/index.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "microbundle-crl --no-compress --format modern,cjs",
+    "start": "microbundle-crl watch --no-compress --format modern,cjs",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "microbundle": "^0.13.0"
+  }
+}
